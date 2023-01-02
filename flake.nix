@@ -11,9 +11,10 @@
       pkgs = import nixpkgs { inherit system; };
     in {
       devShell = with pkgs; mkShell {
-        buildInputs = [
+        nativeBuildInputs = [
           bison cmake flex mcpp doxygen graphviz makeWrapper perl 
           bash-completion ncurses zlib sqlite libffi clang_14
+          duckdb
         ];
       };
     }));

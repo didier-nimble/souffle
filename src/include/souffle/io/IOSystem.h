@@ -29,6 +29,8 @@
 #include "souffle/io/WriteStreamSQLite.h"
 #endif
 
+#include "souffle/io/ReadStreamDuckDB.h"
+
 #include <map>
 #include <memory>
 #include <stdexcept>
